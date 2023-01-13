@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="bg-white rounded-sm max-w-lg m-auto mt-10 p-4 ... border-slate-200 border-2">
+    <h1 class="font-bold">Todo</h1>
+    <div class="task-input flex ...">
+      <input class="p-4 ... h-12 relative w-full ... border-slate-200 border mt-4  focus:outline-none focus:ring focus:ring-blue-500 ... inputValue" type="text" placeholder="Create new tasks">
+      <button class="bg-blue-500 shadow-sm  ... ml-8 mt-4 hover:bg-blue-700 text-white" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"  stroke="currentColor" class="w-6 h-6 ml-4 mr-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>     
+      </button>
+    </div>
+    <div class="grid grid-cols-3 mt-4 filters">
+      <span class="border-2  border-slate-200 mr-2 p-2 ... text-center active hover:border-blue-500" id="all">All</span>
+      <span class="border-2  border-slate-200 mr-1 ml-1 p-2 ... text-center hover:border-blue-500" id="pending">Active</span>
+      <span class="border-2  border-slate-200 ml-2 p-2 ... text-center hover:border-blue-500" id="completed">Completed</span>   
+    </div>
+    <ul class="task-box"></ul>
+    <div class="mt-2 mb-2">
+      <span id="itemLeft">0</span>
+      <span>items left</span>      
+    </div>
+    <div class="grid grid-cols-2 mt-4">
+      <span class="border-2  border-slate-200 mr-2 p-2 ... text-center hover:border-blue-500 checkAll">Check All</span>
+      <span class="border-2  border-slate-200 mr-1 ml-1 p-2 ... text-center clear-btn hover:border-blue-500">Clear Completed</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
